@@ -25,6 +25,8 @@ class Dog < ActiveRecord::Base
     end
     dog
   end
+  
+  def 
 end
 
 
