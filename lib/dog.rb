@@ -1,33 +1,35 @@
 class Dog < ActiveRecord::Base
   
   attr_accessor :id, :name, :breed
-  
-  def initialize(id: "nil", name: , breed: )
-    @id = id 
-    @name = name
-    @breed = breed
-  end
-  
-  def self.save
-    self.save
-    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
-  end
-  
-  def self.create(name, breed)
-    self.create(name, breed)
-  end
-  
-  def self.find_or_create_by(input = {})
-    if !self.find_by(input[0])
-      dog = self.create(input)
-    else 
-      dog = self.find_by(input[0])
-    end
-    dog
-  end
-  
-  def 
+
 end
+  
+  #def initialize(id: "nil", name: , breed: )
+    #@id = id 
+    #@name = name
+    #@breed = breed
+  #end
+  
+  #def self.save
+    #self.save
+    #@id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
+  #end
+  
+  #def self.create(name, breed)
+    #self.create(name, breed)
+  #end
+  
+  #def self.find_or_create_by(input = {})
+    #if !self.find_by(input[0])
+      #dog = self.create(input)
+    #else 
+      #dog = self.find_by(input[0])
+    #end
+    #dog
+  #end
+  
+  #def 
+#end
 
 
 #def self.find_or_create_by(name: , breed: )
