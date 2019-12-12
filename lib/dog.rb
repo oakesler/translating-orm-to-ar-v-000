@@ -25,7 +25,7 @@ class Dog < ActiveRecord::Base
     end
     dog
   end
-d
+end
 
 
 #def self.find_or_create_by(name: , breed: )
