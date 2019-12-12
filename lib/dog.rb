@@ -8,6 +8,9 @@ class Dog < ActiveRecord::Base
   end
   
   def self.create()
+    
+ 
+  end
   
   
 end
