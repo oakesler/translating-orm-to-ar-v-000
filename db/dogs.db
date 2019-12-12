@@ -1,0 +1,6 @@
+class Dogs < ActiveRecord::Base
+
+  attr_accessor :id, :name, :breed
+  
+  def attributes
+end
