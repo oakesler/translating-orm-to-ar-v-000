@@ -12,8 +12,8 @@ class Dog < ActiveRecord::Base
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
   end
   
-  def self.create(name, breed: )
-    self.create(name: ,breed: )
+  def self.create(name, breed)
+    self.create(name, breed)
   end
     
 end
