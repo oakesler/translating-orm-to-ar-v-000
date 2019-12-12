@@ -10,7 +10,7 @@ class Dog < ActiveRecord::Base
   def self.save
     self.save
   end
-  
+end
   #def self.create()
     
  
@@ -27,7 +27,3 @@ class Dog < ActiveRecord::Base
       #DB[:conn].execute(sql, self.name, self.grade)
       #@id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
   #end
-end
-  
-  
-end
