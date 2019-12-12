@@ -14,7 +14,7 @@ class Dog < ActiveRecord::Base
   end
   
   def self.create(name: , breed: )
-    self.create(name, breed)
+    self.create(name: , breed: )
   end
   
   def self.find_or_create_by(input = {})
