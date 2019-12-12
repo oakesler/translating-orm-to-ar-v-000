@@ -9,6 +9,7 @@ class Dog < ActiveRecord::Base
   
   def self.save
     self.save
+    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
   end
 end
   #def self.create()
